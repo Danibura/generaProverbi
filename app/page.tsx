@@ -906,8 +906,14 @@ let lista = splitta.map((el) => el.trim());
 export default function Home() {
   const [proverbio, setProverbio] = useState("");
   const [inizio, setInizio] = useState("");
+  const [clicked, setClicked] = useState(false);
 
   function generaProverbio() {
+    setClicked(true);
+    setTimeout(() => {
+      setClicked(false);
+    }, 300);
+
     let min = 0;
     let max = lista.length;
     let trovato = false;
@@ -945,7 +951,7 @@ export default function Home() {
       </h2>
       <button
         onClick={generaProverbio}
-        className="bg-sky-700 font-extrabold md:p-8 p-4 md:text-5xl text-2xl rounded-3xl text-sky-50 absolute md:bottom-30 bottom-10 shadow-xl shadow-sky-300"
+        className={`bg-sky-700 font-extrabold md:p-8 p-4 md:text-5xl text-2xl rounded-3xl text-sky-50 absolute md:bottom-30 bottom-10 shadow-xl shadow-sky-300 transition-transform duration-300 ${clicked ? "scale-110" : "scale-100"}`}
       >
         Genera proverbio
       </button>
