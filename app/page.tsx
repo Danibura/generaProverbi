@@ -940,12 +940,12 @@ export default function Home() {
         onChange={(e) => setInizio(e.target.value)}
         className="md:text-3xl text-xl border rounded-lg text-stone-900 absolute md:top-20 top-10 md:p-4 p-2 shadow-md "
       />
-      <h2 className="md:text-7xl text-3xl font-bold absolute md:top-60 top-30 text-stone-800 md:p-40 p-20">
+      <h2 className="md:text-7xl text-3xl font-bold absolute md:top-60 top-30 text-stone-800 md:p-40 p-15">
         {proverbio}
       </h2>
       <button
         onClick={generaProverbio}
-        className="bg-sky-700 font-extrabold md:p-8 p-4 md:text-5xl text-2xl rounded-3xl text-sky-50 absolute bottom-32 shadow-xl shadow-sky-300"
+        className="bg-sky-700 font-extrabold md:p-8 p-4 md:text-5xl text-2xl rounded-3xl text-sky-50 absolute md:bottom-30 bottom-10 shadow-xl shadow-sky-300"
       >
         Genera proverbio
       </button>
