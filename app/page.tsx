@@ -940,7 +940,7 @@ export default function Home() {
         onChange={(e) => setInizio(e.target.value)}
         className="md:text-3xl text-xl border rounded-lg text-stone-900 absolute md:top-20 top-10 md:p-4 p-2 shadow-md "
       />
-      <h2 className="md:text-7xl text-3xl font-bold absolute top-60 text-stone-800 md:p-40 p-20">
+      <h2 className="md:text-7xl text-3xl font-bold absolute md:top-60 top-30 text-stone-800 md:p-40 p-20">
         {proverbio}
       </h2>
       <button
